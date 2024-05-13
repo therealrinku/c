@@ -10,5 +10,5 @@
 <br/><br/>
 ## About C
 
-you're not a real programmer if you don't try C, so I'm trying it out right now. <br/>
+They say you're not a real programmer if you don't try C or any low level languages, so I'm poking around with C right now. <br/>
 Playing around with pointers, stars, ampersands and what not.
