@@ -10,5 +10,6 @@
 <br/><br/>
 ## About C
 
-They say you're not a real programmer if you don't try C or any low level languages, so I'm poking around with C right now. <br/>
+They say you're not a real programmer if you don't try C or any low level languages. <br/>
+So I'm poking around with C right now. <br/>
 Playing around with pointers, stars, ampersands and what not.
