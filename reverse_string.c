@@ -7,20 +7,30 @@
 #include "stdlib.h"
 #include "string.h"
 
-void reverse(char *str);
+void reverseInPlace(char *str);
+char* reverse(char *str);
 
 int main(void) {
   char string[] = "pussycat";
+  char string1[] = "abracadabra";
 
-  reverse(string);
+  reverseInPlace(string);
+
+  char* reversed1 = reverse(string1);
 
   // it should be reversed here!!
-  printf("%s", string);
-  
+  printf("%s\n", string);
+
+  // string1 should be same
+  printf("%s\n", string1);
+
+  // reversed1 should be reverse of string1
+  printf("%s\n", reversed1);
+
   return 0;
 }
 
-void reverse(char *str) {
+void reverseInPlace(char *str) {
   // do pointer arthimetic here
   char *end = str;
 
@@ -41,4 +51,15 @@ void reverse(char *str) {
     start++;
     end--;
   }
+}
+
+char* reverse(char *str){
+  int size = strlen(str);
+  char* resultString = malloc((size + 1) * sizeof(char)); // Allocate memory on the heap
+
+  strcpy(resultString, str);
+
+  reverseInPlace(resultString);
+  
+  return resultString;
 }
