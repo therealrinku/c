@@ -27,6 +27,8 @@ int main(void) {
   // reversed1 should be reverse of string1
   printf("%s\n", reversed1);
 
+  free(reversed1); 
+  
   return 0;
 }
 
@@ -55,7 +57,7 @@ void reverseInPlace(char *str) {
 
 char* reverse(char *str){
   int size = strlen(str);
-  char* resultString = malloc((size + 1) * sizeof(char)); // Allocate memory on the heap
+  char* resultString = malloc((size + 1) * sizeof(char));
 
   strcpy(resultString, str);
 
