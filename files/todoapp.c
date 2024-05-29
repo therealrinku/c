@@ -11,7 +11,8 @@
 
 typedef struct{
   int id;
-  char description[256];
+  // 257 including null character :)
+  char description[257];
   int is_completed;
 } Todo;
 
