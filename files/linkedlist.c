@@ -69,15 +69,18 @@ int main(void){
 
 
 void freeList(void){
-  // list = malloc(sizeof(Node));
   Node *curr = list;
   
-  for(int i=0;i<size;i++){ 
+  while(curr != NULL){
     Node *next = curr->next;
     free(curr);
     curr = next;
   }
+
+  list = NULL;
+  size = 0;
 }
+
 
 void addToList(void){
   int val;
