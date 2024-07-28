@@ -36,7 +36,7 @@ int main(void){
 
   while(true){
     int cmd;
-    
+
     printf("\n----COMMANDLINE TODO APPLICATION----\n");
     printf("1. Add todo\n");
     printf("2. View todos\n");
@@ -46,6 +46,10 @@ int main(void){
     printf("Type your choice:");
 
     scanf("%i", &cmd);
+
+    //clean the input buffer, so fgets works properly
+    char a;
+    while((a=getchar()) != '\n'){}
 
     switch(cmd){
       case 1:{
@@ -72,7 +76,7 @@ int main(void){
       }
     }
   }
-  
+
   return 0;
 }
 
@@ -131,7 +135,7 @@ void add_todo(void){
 
   printf("Enter new todo description:");
   // fgets puts null terminator by itself there, thanks fgets!!
-  fgets(new_todo.description, 257, stdin);
+  fgets(new_todo.description, 256, stdin);
 
   todos[todos_len++] = new_todo;
 }
