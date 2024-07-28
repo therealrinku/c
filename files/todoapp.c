@@ -135,7 +135,7 @@ void add_todo(void){
 
   printf("Enter new todo description:");
   // fgets puts null terminator by itself there, thanks fgets!!
-  fgets(new_todo.description, 256, stdin);
+  fgets(new_todo.description, 257, stdin);
 
   todos[todos_len++] = new_todo;
 }
