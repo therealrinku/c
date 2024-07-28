@@ -130,8 +130,8 @@ void add_todo(void){
   new_todo.is_completed = 0;
 
   printf("Enter new todo description:");
-  // use fgets and strcspn ??
-  scanf("%s", new_todo.description);
+  // fgets puts null terminator by itself there, thanks fgets!!
+  fgets(new_todo.description, 257, stdin);
 
   todos[todos_len++] = new_todo;
 }
