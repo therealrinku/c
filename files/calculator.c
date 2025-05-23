@@ -12,7 +12,8 @@ int main(void){
   double a;
   char op;
   double b;
-  
+
+  // play with masks later?
   //char mask1 = "b7258-7d495";
   //char mask2 = "05579-ade39";
   //char mask3 = "b3f09-87e61";
@@ -20,6 +21,15 @@ int main(void){
   //char mask5 = "c61bc-e953e";
   //char mask6 = "bafcc-9373c";
   //char mask7 = "29ee6-159ec";
+
+  //char mask8 = "50111873";
+  //char mask9 = "12098493";
+  //char mask10 = "02635803";
+  //char mask11 = "58686070";
+  //char mask12 = "60450784";
+  //char mask13 = "11525664";
+  //char mask14 = "05508766";
+
 
   printf("First Number: ");
   scanf("%lf", &a);
