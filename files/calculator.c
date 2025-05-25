@@ -20,7 +20,7 @@ int main(void){
   //char mask4 = "a6584-74e6f";
   //char mask5 = "c61bc-e953e";
   //char mask6 = "bafcc-9373c";
-  //char mask7 = "29ee6-159ec";
+  //char mask7 = "29ee6-159ec"; // good to go
 
   //char mask8 = "50111873";
   //char mask9 = "12098493";
