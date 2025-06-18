@@ -1,5 +1,5 @@
 /*
-  calculator app that performs addition,substraction, multiplication and division
+  calculator app that performs addition,substraction, multiplication, division
 */
 
 #include <stdio.h>
